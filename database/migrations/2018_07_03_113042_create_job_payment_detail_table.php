@@ -14,7 +14,7 @@ class CreateJobPaymentDetailTable extends Migration
     public function up()
     {
         Schema::create('job_payment_detail', function (Blueprint $table) {
-            $table->increments('payment_id');
+            $table->string('payment_id');
             $table->string('paid_status');
             $table->timestamps();
         });
