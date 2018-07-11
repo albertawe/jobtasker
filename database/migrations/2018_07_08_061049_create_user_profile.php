@@ -18,9 +18,9 @@ class CreateUserProfile extends Migration
         $table->string('first_name');
         $table->string('last_name');
         $table->text('tagline')->nullable();
-        $table->string('email')->unique();
-        $table->date('birthdate');
-        $table->string('location');
+        $table->string('email')->unique()->nullable();
+        $table->date('birthdate')->nullable();
+        $table->string('location')->nullable();
         $table->timestamps();
         });
     }
