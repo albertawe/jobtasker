@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\UserProfile;
+use App\UserSkill;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -49,7 +51,8 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
+            'firstname' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
@@ -63,8 +66,13 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $user_skill = new UserSkill;
+        $user_skill->save();
+        $user_profile = new UserProfile;
+        $user_profile->first_name = $data['firstname'];
+        $user_profile->last_name = $data['lastname'];
+        $user_profile->save();
         return User::create([
-            'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);

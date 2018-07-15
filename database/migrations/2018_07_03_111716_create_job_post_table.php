@@ -15,7 +15,7 @@ class CreateJobPostTable extends Migration
     {
         Schema::create('job_post', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('payment_id');
+            $table->string('payment_id')->unique();
             $table->string('posted_by_id');
             $table->string('job_type');
             $table->string('job_category');

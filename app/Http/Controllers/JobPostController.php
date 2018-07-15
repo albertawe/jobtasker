@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\JobPost;
+use App\PaymentDetail;
 
 class JobPostController extends Controller
 {
@@ -53,7 +54,9 @@ class JobPostController extends Controller
         $job_post->price = $request->price;
         $job_post->address = $request->address;
         $job_post->job_description = $request->job_description;
-
+        $payment = new PaymentDetail;
+        $payment['payment_id'] = $payment_id;
+        $payment->save();
         $job_post->save();
 
         return response()->json(['success'=> true, 'message'=> 'User skill successfully added.']);

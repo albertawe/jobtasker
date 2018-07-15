@@ -14,8 +14,10 @@ class CreateJobPaymentDetailTable extends Migration
     public function up()
     {
         Schema::create('job_payment_detail', function (Blueprint $table) {
-            $table->string('payment_id');
-            $table->string('paid_status');
+            $table->increments('id');
+            $table->string('payment_id')->unique();
+            //$table->foreign('payment_id')->references('payment_id')->on('job_post');
+            $table->string('paid_status')->default('not paid');
             $table->timestamps();
         });
     }
