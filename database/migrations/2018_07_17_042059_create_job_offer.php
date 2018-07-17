@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateJobPaymentDetailTable extends Migration
+class CreateJobOffer extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateJobPaymentDetailTable extends Migration
      */
     public function up()
     {
-        Schema::create('job_payment_detail', function (Blueprint $table) {
+        Schema::create('offers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('payment_id');
-            //$table->foreign('payment_id')->references('payment_id')->on('job_post');
-            $table->string('paid_status')->default('not paid');
+            $table->string('job_id');
+            $table->string('user_offer_id');
+            $table->string('description');
+            $table->integer('nego')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateJobPaymentDetailTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('job_payment_detail');
+        Schema::dropIfExists('offers');
     }
 }

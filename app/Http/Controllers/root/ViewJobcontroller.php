@@ -4,10 +4,11 @@ namespace App\Http\Controllers\root;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\JobPost;
+use App\PaymentDetail;
+use App\offer;
 use Auth;
-use App\UserProfile;
-use Carbon\Carbon;
-class UserProfileController extends Controller
+class ViewJobcontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,12 +17,7 @@ class UserProfileController extends Controller
      */
     public function index()
     {
-        $id = Auth::user()->id;
-        $user_profile = UserProfile::find($id);
-        Carbon::parse($user_profile->birthdate)->format('y/m/d'); 
-        //dd($user_profile);
-        return view('afterlogin.home',compact('user_profile'));
-        //return $user_profile;
+        //
     }
 
     /**
@@ -42,21 +38,7 @@ class UserProfileController extends Controller
      */
     public function store(Request $request)
     {
-        $id = Auth::user()->id;
-        $user_profile = UserProfile::find($id);
-        $user_profile->first_name = $request->get('firstname');
-        $user_profile->last_name = $request->get('lastname');
-        $user_profile->email = $request->get('email');
-        //$user_profile->birthdate = $request->get('birthdate');
-        $user_profile->birthdate = $request->date;
-        $name=$request->image->getClientOriginalName();
-        $request->image->move(public_path().'/images/profile', $name);  
-        $user_profile->image = $name;  
-        //dd($request->date);
-        $user_profile->tagline = $request->get('tagline');
-        $user_profile->location = $request->get('location');
-        $user_profile->save();
-        return redirect('dashboard');
+        //
     }
 
     /**
@@ -67,8 +49,11 @@ class UserProfileController extends Controller
      */
     public function show($id)
     {
-        $user_profile = UserProfile::find($id);
-        return view('afterlogin.viewprofile',compact('user_profile'));
+        $taskdetails = JobPost::find($id);
+        $user_id = Auth::user()->id;
+        $paymentdetails = PaymentDetail::where('payment_id',$taskdetails->payment_id)->get();
+        $offers = offer::where('job_id',$taskdetails->id)->get();
+        return view('afterlogin.viewtask',compact('taskdetails','paymentdetails','offers','user_id'));
     }
 
     /**

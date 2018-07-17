@@ -16,5 +16,10 @@ Route::get('/', function () {
 });
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Auth::routes();
-
-Route::get('/home', 'HomeController@index');
+Route::resource('dashboard','\App\Http\Controllers\root\UserProfileController');
+Route::resource('posttask','\App\Http\Controllers\root\JobPostController');
+Route::resource('browsetask','\App\Http\Controllers\root\BrowseTaskController');
+Route::resource('mytask','\App\Http\Controllers\root\MyTaskController');
+Route::resource('viewtask','\App\Http\Controllers\root\ViewJobController');
+Route::resource('postoffer','\App\Http\Controllers\root\OfferController');
+//Route::get('/home', 'HomeController@index');

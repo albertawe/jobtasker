@@ -17,9 +17,10 @@ class CreateJobPostTable extends Migration
             $table->increments('id');
             $table->string('payment_id')->unique();
             $table->string('posted_by_id');
+            $table->string('title');
             $table->string('job_type');
             $table->string('job_category');
-            $table->string('status');
+            $table->string('status')->default('not assigned');
             $table->string('assigned_tasker_id')->nullable();
             $table->string('due_date');
             $table->integer('price');

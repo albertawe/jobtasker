@@ -30,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/dashboard';
 
     /**
      * Create a new controller instance.
@@ -71,6 +71,7 @@ class RegisterController extends Controller
         $user_profile = new UserProfile;
         $user_profile->first_name = $data['firstname'];
         $user_profile->last_name = $data['lastname'];
+        $user_profile->email = $data['email'];
         $user_profile->save();
         return User::create([
             'email' => $data['email'],

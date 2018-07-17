@@ -4,7 +4,10 @@ namespace App\Http\Controllers\root;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\jobcategory;
+use App\JobPost;
+use Auth;
+use App\PaymentDetail;
 class JobPostController extends Controller
 {
     /**
@@ -14,7 +17,8 @@ class JobPostController extends Controller
      */
     public function index()
     {
-        //
+        $categories = jobcategory::all();
+        return view('afterlogin.jobpost',compact('categories'));
     }
 
     /**
@@ -24,7 +28,7 @@ class JobPostController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -35,7 +39,23 @@ class JobPostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $id = Auth::user()->id;
+        $job_post = new JobPost;
+        $payment_id = sprintf('P-%07d', JobPost::orderBy('id', 'desc')->first()->id + 1);
+        $job_post->payment_id = $payment_id;
+        $job_post->title = $request->title;
+        $job_post->posted_by_id = $id;
+        $job_post->job_type = $request->type;
+        $job_post->job_category = $request->category;
+        $job_post->due_date = $request->duedate;
+        $job_post->price = $request->price;
+        $job_post->address = $request->address;
+        $job_post->job_description = $request->jobdescription;
+        $payment = new PaymentDetail;
+        $payment['payment_id'] = $payment_id;
+        $payment->save();
+        $job_post->save();
+        return redirect('posttask');
     }
 
     /**

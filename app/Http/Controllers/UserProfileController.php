@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\UserProfile;
 use Validator;
-
+use Carbon\Carbon;
 class UserProfileController extends Controller
 {
     public function getUserProfile($id){
@@ -36,7 +36,9 @@ class UserProfileController extends Controller
         $user_profile->last_name = $request->last_name;
         $user_profile->tagline = $request->tagline;
         $user_profile->email = $request->email;
-        $user_profile->birthdate = $request->birthdate;
+        //$user_profile->birthdate = $request->birthdate;
+        $user_profile->birthdate = date("Y-m-d", strtotime($request->birthdate));
+        dd($user_profile->birthdate);
         $user_profile->location = $request->location;
 
         $user_profile->save();
