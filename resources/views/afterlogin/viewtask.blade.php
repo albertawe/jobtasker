@@ -24,7 +24,7 @@
 							@foreach($offers as $offer)
 							<p>{{$offer->description}}</p>
 							<p>{{$offer->nego}}</p>
-							<p>{{$offer->user_offer_id}}</p>
+							<a href="viewprofile/{{$offer->user_offer_id}}">See the tasker's profile</a>
 							<a href="">choose this offer</a>
 							@endforeach
 							@elseif($taskdetails->status == 'not assigned')
