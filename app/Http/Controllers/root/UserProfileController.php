@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\root;
 
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
@@ -18,11 +19,13 @@ class UserProfileController extends Controller
     public function index()
     {
         $id = Auth::user()->id;
-        $user_profile = UserProfile::find($id);
-        $user_skill = UserSkill::find($id);
-        Carbon::parse($user_profile->birthdate)->format('y/m/d'); 
+//        $user_profile = UserProfile::find($id);
+//        $user_skill = UserSkill::find($id);
+        $user = User::where('id', $id)->with(['user_skill', 'user_profile'])->first();
+
+        Carbon::parse($user->user_profile->birthdate)->format('y/m/d');
         //dd($user_profile);
-        return view('afterlogin.home',compact('user_profile','user_skill'));
+        return view('afterlogin.home',compact('user'));
         //return $user_profile;
     }
 

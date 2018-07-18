@@ -25,7 +25,7 @@
 							<p>{{$offer->description}}</p>
 							<p>{{$offer->nego}}</p>
 							<a href="viewprofile/{{$offer->user_offer_id}}">See the tasker's profile</a>
-							<a href="">choose this offer</a>
+                            <a href="accept_offer/{{$offer->id}}"><p>choose this offer</p></a>
 							@endforeach
 							@elseif($taskdetails->status == 'not assigned')
 							<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">

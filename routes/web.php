@@ -23,4 +23,5 @@ Route::resource('mytask','\App\Http\Controllers\root\MyTaskController');
 Route::resource('viewtask','\App\Http\Controllers\root\ViewJobController');
 Route::resource('postoffer','\App\Http\Controllers\root\OfferController');
 Route::resource('postskill','\App\Http\Controllers\root\UserSkillController');
+Route::get('viewtask/accept_offer/{offer_id}', "AcceptOfferController@Accept");
 //Route::get('/home', 'HomeController@index');
