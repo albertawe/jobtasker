@@ -16,11 +16,11 @@ class CreateUserSkill extends Migration
         Schema::create('user_skill', function (Blueprint $table) {
             $table->increments('id');
             $table->text('tagline')->nullable();
-            $table->string('transportaion')->nullable();
+            $table->string('transportation')->nullable();
             $table->string('language')->nullable();
             $table->string('qualification')->nullable();
             $table->string('workexperience')->nullable();
-            $table->binary('cv')->nullable();
+            $table->string('cv')->nullable()->default('nothinga.jpg');
             $table->timestamps();
             });
     }

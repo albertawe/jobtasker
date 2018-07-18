@@ -60,8 +60,8 @@
 					<li><a href="/posttask">Post Task</a></li>
 					<li><a href="/browsetask">Browse Task</a></li>
 					<li><a href="/mytask">My Task</a></li>
+					<li><a href="/postxyzoffer">offer</a></li>
 					<li><a href="/help">help</a></li>
-					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 

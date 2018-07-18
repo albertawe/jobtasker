@@ -16,6 +16,7 @@ class CreateJobOffer extends Migration
         Schema::create('offers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('job_id');
+            $table->string('job_title');
             $table->string('user_offer_id');
             $table->string('description');
             $table->integer('nego')->nullable();

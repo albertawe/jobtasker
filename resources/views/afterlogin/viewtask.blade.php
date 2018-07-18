@@ -20,12 +20,14 @@
                                 <p>Due Date : {{$taskdetails->due_date}}</p>
                                 <p>Address : {{$taskdetails->address}}</p>
                                 <p>Job Description : {{$taskdetails->job_description}}</p>
-							@if($taskdetails->posted_by_id == $user_id)
+							@if($taskdetails->posted_by_id == $uid)
 							@foreach($offers as $offer)
-							<button>assigned</button>
+							<p>{{$offer->description}}</p>
+							<p>{{$offer->nego}}</p>
+							<p>{{$offer->user_offer_id}}</p>
+							<a href="">choose this offer</a>
 							@endforeach
-							@endif
-							@if($taskdetails->status == 'not assigned')
+							@elseif($taskdetails->status == 'not assigned')
 							<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
 									<form method="post" action="{{url('postoffer')}}" enctype="multipart/form-data">
 									@csrf
@@ -40,6 +42,7 @@
 										</div>
 										<div class="form-group">
 										<input type="hidden" value="{{$taskdetails->id}}" class="form-control" name="job_id">
+										<input type="hidden" value="{{$taskdetails->title}}" class="form-control" name="job_title">
 										<input type="submit" class="btn btn-primary btn-send-message" value="send your offer">
 										</div>
 									</form>

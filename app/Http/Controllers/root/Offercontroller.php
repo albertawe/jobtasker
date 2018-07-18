@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\offer;
 use Redirect;
 use Auth;
+use App\JobPost;
 class Offercontroller extends Controller
 {
     /**
@@ -16,7 +17,9 @@ class Offercontroller extends Controller
      */
     public function index()
     {
-        //
+        $id = Auth::user()->id;
+        $offers = offer::where('user_offer_id',$id)->get();
+        return view('afterlogin.viewoffer',compact('offers'));
     }
 
     /**
@@ -39,6 +42,7 @@ class Offercontroller extends Controller
     {
         $uid = Auth::user()->id;
         $offer = new offer;
+        $offer->job_title = $request->get('job_title');
         $offer->job_id = $request->get('job_id');
         $offer->nego = $request->get('price');
         $offer->description = $request->get('description');

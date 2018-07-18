@@ -53,7 +53,8 @@ class ViewJobcontroller extends Controller
         $user_id = Auth::user()->id;
         $paymentdetails = PaymentDetail::where('payment_id',$taskdetails->payment_id)->get();
         $offers = offer::where('job_id',$taskdetails->id)->get();
-        return view('afterlogin.viewtask',compact('taskdetails','paymentdetails','offers','user_id'));
+        $uid = strval($user_id);
+        return view('afterlogin.viewtask',compact('taskdetails','paymentdetails','offers','uid'));
     }
 
     /**

@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
@@ -22,4 +22,5 @@ Route::resource('browsetask','\App\Http\Controllers\root\BrowseTaskController');
 Route::resource('mytask','\App\Http\Controllers\root\MyTaskController');
 Route::resource('viewtask','\App\Http\Controllers\root\ViewJobController');
 Route::resource('postoffer','\App\Http\Controllers\root\OfferController');
+Route::resource('postskill','\App\Http\Controllers\root\UserSkillController');
 //Route::get('/home', 'HomeController@index');
