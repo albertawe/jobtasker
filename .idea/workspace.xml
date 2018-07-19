@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84dd9fd-91d8-4149-8d53-e4b93516db11" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/root/UserProfileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/root/UserProfileController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/root/ViewJobcontroller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/root/ViewJobcontroller.php" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change beforePath="$PROJECT_DIR$/app/UserProfile.php" afterPath="$PROJECT_DIR$/app/UserProfile.php" />
-      <change beforePath="$PROJECT_DIR$/app/UserSkill.php" afterPath="$PROJECT_DIR$/app/UserSkill.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/afterlogin/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/afterlogin/home.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/afterlogin/viewtask.blade.php" afterPath="$PROJECT_DIR$/resources/views/afterlogin/viewtask.blade.php" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_07_18_182953_add_foreign_key_to_user_skill.php" afterPath="$PROJECT_DIR$/database/migrations/2018_07_18_182953_add_foreign_key_to_user_skill.php" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_07_18_185717_add_foreign_key_to_user_profile.php" afterPath="$PROJECT_DIR$/database/migrations/2018_07_18_185717_add_foreign_key_to_user_profile.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,16 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,7 +44,7 @@
       <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/afterlogin/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="1785">
               <caret line="105" column="53" lean-forward="false" selection-start-line="105" selection-start-column="53" selection-end-line="105" selection-end-column="53" />
               <folding>
                 <marker date="1531942290746" expanded="true" signature="9:27" ph="..." />
@@ -103,7 +84,7 @@
       <file leaf-file-name="AcceptOfferController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AcceptOfferController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="272">
               <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
@@ -115,7 +96,7 @@
       <file leaf-file-name="ViewJobcontroller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/root/ViewJobcontroller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="867">
               <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
               <folding>
                 <element signature="e#45#73#0#PHP" expanded="true" />
@@ -124,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewtask.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="viewtask.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/afterlogin/viewtask.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -157,11 +138,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018_07_18_182953_add_foreign_key_to_user_skill.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2018_07_18_182953_add_foreign_key_to_user_skill.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/migrations/2018_07_18_182953_add_foreign_key_to_user_skill.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+            <state relative-caret-position="595">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018_07_18_185717_add_foreign_key_to_user_profile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_07_18_185717_add_foreign_key_to_user_profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -205,8 +196,6 @@
         <option value="$PROJECT_DIR$/app/UserSkill.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/UserProfile.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_07_18_185717_add_foreign_key_to_user_profile.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_07_18_182953_add_foreign_key_to_user_skill.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/root/UserProfileController.php" />
         <option value="$PROJECT_DIR$/resources/views/afterlogin/home.blade.php" />
@@ -214,6 +203,8 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AcceptOfferController.php" />
         <option value="$PROJECT_DIR$/resources/views/afterlogin/viewtask.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_07_18_182953_add_foreign_key_to_user_skill.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_07_18_185717_add_foreign_key_to_user_profile.php" />
       </list>
     </option>
   </component>
@@ -329,6 +320,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -399,7 +391,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -434,29 +425,30 @@
       <option name="presentableId" value="Default" />
       <updated>1531246895870</updated>
       <workItem from="1531246897552" duration="10810000" />
-      <workItem from="1531935316852" duration="9285000" />
+      <workItem from="1531935316852" duration="9842000" />
+      <workItem from="1531979733386" duration="94000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20095000" />
+    <option name="totallyTimeSpent" value="20746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20886889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2114396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -498,11 +490,139 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/afterlogin/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="105" column="53" lean-forward="false" selection-start-line="105" selection-start-column="53" selection-end-line="105" selection-end-column="53" />
+          <folding>
+            <marker date="1531942290746" expanded="true" signature="9:27" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="38:47" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="900:926" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="1004:1020" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="1429:1460" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="1672:1702" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="1908:1934" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="2152:2181" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="2421:2451" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="2765:2793" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="3006:3031" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="3245:3272" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="4082:4103" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="4181:4197" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="4595:4628" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="4852:4879" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="5123:5155" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="5394:5427" ph="..." />
+            <marker date="1531942290746" expanded="true" signature="5778:5804" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="70" lean-forward="false" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AcceptOfferController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/root/ViewJobcontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+          <folding>
+            <element signature="e#45#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_07_18_182953_add_foreign_key_to_user_skill.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/UserSkill.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/afterlogin/viewtask.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="90" lean-forward="false" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
+          <folding>
+            <marker date="1531944650088" expanded="true" signature="9:28" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="39:48" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="588:607" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="665:684" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="739:761" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="820:846" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="899:919" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="974:996" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1050:1071" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1133:1162" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1180:1214" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1232:1249" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1263:1282" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1301:1313" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1350:1371" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1456:1464" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1456:1466" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1533:1571" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="1718:1734" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="2356:2375" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="2537:2553" ph="..." />
+            <marker date="1531944650088" expanded="true" signature="2633:2652" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/root/UserProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <element signature="e#45#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/channels.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -510,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
           <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -536,9 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="62" column="113" lean-forward="false" selection-start-line="62" selection-start-column="113" selection-end-line="62" selection-end-column="113" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -546,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -564,9 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -574,9 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="46" column="32" lean-forward="false" selection-start-line="46" selection-start-column="32" selection-end-line="48" selection-end-column="94" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,9 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -626,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,9 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="755">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,17 +763,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_07_18_185717_add_foreign_key_to_user_profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="1734">
           <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding />
         </state>
@@ -684,12 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1531934596770" expanded="true" signature="9:22" ph="..." />
-            <marker date="1531934596770" expanded="true" signature="34:43" ph="..." />
-            <marker date="1531934596770" expanded="true" signature="299:316" ph="..." />
-            <marker date="1531934596770" expanded="true" signature="419:438" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,17 +802,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_07_18_182953_add_foreign_key_to_user_skill.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/afterlogin/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="1785">
           <caret line="105" column="53" lean-forward="false" selection-start-line="105" selection-start-column="53" selection-end-line="105" selection-end-column="53" />
           <folding>
             <marker date="1531942290746" expanded="true" signature="9:27" ph="..." />
@@ -773,7 +850,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AcceptOfferController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="272">
           <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
@@ -783,7 +860,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/root/ViewJobcontroller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="867">
           <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
           <folding>
             <element signature="e#45#73#0#PHP" expanded="true" />
@@ -819,6 +896,22 @@
             <marker date="1531944650088" expanded="true" signature="2537:2553" ph="..." />
             <marker date="1531944650088" expanded="true" signature="2633:2652" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_07_18_185717_add_foreign_key_to_user_profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_07_18_182953_add_foreign_key_to_user_skill.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

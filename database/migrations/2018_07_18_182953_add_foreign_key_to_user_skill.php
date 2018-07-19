@@ -30,8 +30,8 @@ class AddForeignKeyToUserSkill extends Migration
     public function down()
     {
         Schema::table('user_skill', function (Blueprint $table){
-            $table->dropForeign('user_id');
-            $table->dropColumn('user_id');
+            $table->dropForeign(['user_id']);
+//            $table->dropColumn('user_id');
         });
     }
 }
