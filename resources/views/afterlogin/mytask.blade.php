@@ -1,4 +1,7 @@
 @extends('layouts/template')
+@section('colorlib_mytask')
+colorlib-active
+@endsection
 @section('content')
 		<div class="colorlib-contact">
 			<div class="colorlib-narrow-content">
@@ -49,7 +52,6 @@
 								</div>
                         </div>
 				</div>
-				
 				@endforeach   
 				</div> 
 			</div>

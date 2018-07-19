@@ -345,6 +345,7 @@ class ComposerStaticInit3be89d9fa3722db91ba78ffc94d7df8e
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AcceptOfferController' => __DIR__ . '/../..' . '/app/Http/Controllers/AcceptOfferController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -364,6 +365,8 @@ class ComposerStaticInit3be89d9fa3722db91ba78ffc94d7df8e
         'App\\Http\\Controllers\\root\\UserProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/root/UserProfileController.php',
         'App\\Http\\Controllers\\root\\UserSkillController' => __DIR__ . '/../..' . '/app/Http/Controllers/root/UserSkillController.php',
         'App\\Http\\Controllers\\root\\ViewJobcontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/root/ViewJobcontroller.php',
+        'App\\Http\\Controllers\\root\\ViewProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/root/ViewProfileController.php',
+        'App\\Http\\Controllers\\root\\messagecontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/root/messagecontroller.php',
         'App\\Http\\Controllers\\viewtaskcontroller' => __DIR__ . '/../..' . '/app/Http/Controllers/viewtaskcontroller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',

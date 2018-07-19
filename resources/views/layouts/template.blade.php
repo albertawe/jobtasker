@@ -55,13 +55,15 @@
 		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 			<h1 id="colorlib-logo"><a href="index.html">JobTasker</a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
-				<ul>
-					<li class="colorlib-active"><a href="/dashboard">Home</a></li>
-					<li><a href="/posttask">Post Task</a></li>
-					<li><a href="/browsetask">Browse Task</a></li>
-					<li><a href="/mytask">My Task</a></li>
-					<li><a href="/postxyzoffer">offer</a></li>
-					<li><a href="/help">help</a></li>
+				<ul>				
+					<li class="@yield('colorlib_home')"><a href="/dashboard">Home</a></li>
+					<li class="@yield('colorlib_posttask')"><a href="/posttask">Post Task</a></li>
+					<li class="@yield('colorlib_browsetask')"><a href="/browsetask">Browse Task</a></li>
+					<li class="@yield('colorlib_mytask')"><a href="/mytask">My Task</a></li>
+					<li class="@yield('colorlib_offertask')"><a href="/postoffer">offer</a></li>
+					<li class="@yield('colorlib_message')"><a href="/message">message</a></li>
+					<li class="@yield('colorlib_helptask')"><a href="/help">help</a></li>
+					<li ><a href="/logout">logout</a></li>
 				</ul>
 			</nav>
 

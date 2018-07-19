@@ -24,7 +24,8 @@
 							@foreach($offers as $offer)
 							<p>{{$offer->description}}</p>
 							<p>{{$offer->nego}}</p>
-							<a href="viewprofile/{{$offer->user_offer_id}}">See the tasker's profile</a>
+							<a href="createmessage/{{$offer->user_offer_id}}"><p>Send this tasker a message</p></a>
+							<a href="viewprofile/{{$offer->user_offer_id}}"><p>See the tasker's profile</p></a>
                             <a href="accept_offer/{{$offer->id}}"><p>choose this offer</p></a>
 							@endforeach
 							@elseif($taskdetails->status == 'not assigned')

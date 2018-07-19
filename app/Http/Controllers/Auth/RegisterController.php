@@ -100,14 +100,14 @@ class RegisterController extends Controller
         $user_profile->last_name = $data['lastname'];
         $user_profile->email = $data['email'];
 
-        $user_profile->birthdate = "1997-09-10";
-        $user_profile->location = "Medan";
+        // $user_profile->birthdate = "1997-09-10";
+        // $user_profile->location = "Medan";
 
         $user->user_profile()->save($user_profile);
 
         $user_skill = new UserSkill();
 
-        $user_skill->cv = "sample.jpg";
+        // $user_skill->cv = "sample.jpg";
 
         $user->user_skill()->save($user_skill);
 

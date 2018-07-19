@@ -1,5 +1,5 @@
 @extends('layouts/template')
-@section('colorlib_browsetask')
+@section('colorlib_message')
 colorlib-active
 @endsection
 @section('content')
@@ -7,20 +7,16 @@ colorlib-active
 			<div class="colorlib-narrow-content">
 				<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Browse available task</span>
-							<h2 class="colorlib-heading">Yum...more money</h2>
+							<span class="heading-meta">Your list of message</span>
 						</div>
 				</div>
 				<div class="row">
-                @foreach($jobs as $job)
+                @foreach($messages as $mes)
 						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="blog-entry">
 								<!-- <a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a> -->
 								<div class="desc">
-								<h3><a href="viewtask/{{$job->id}}">{{$job->title}}</a></h3>
-									<span>Due Date : <small>{{$job->due_date}}</small> | Category :
-									<small>{{$job->job_category}}</small> | Type : <small>{{$job->job_type}}</small></span>
-									<p>{{$job->job_description}}</p>
+								<h3><a href="viewcons/{{$mes->id}}">message between {{$mes->name1}} and {{$mes->name2}}</a></h3>
 								</div>
                         </div>
 				</div>
