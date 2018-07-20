@@ -16,6 +16,7 @@ class CreateJobCategory extends Migration
         Schema::create('jobcategories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('category');
+            $table->timestamps();
         });
     }
 
