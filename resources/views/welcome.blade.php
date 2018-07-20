@@ -24,6 +24,7 @@
 
 	<!-- Font Awesome Icon -->
 	<!-- <link rel="stylesheet" href="/css/nologin/font-awesome.min.css"> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<!-- Custom stlylesheet -->
@@ -41,7 +42,7 @@
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background1.jpg');">
+		<div class="bg-img" style="background-image: url('./img/background4.jpg');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -70,17 +71,19 @@
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#service">Services</a></li>
-					<li><a href="#pricing">Prices</a></li>
+					<!-- <li><a href="#about">About</a></li> -->
+					<li><a href="#portfolio">Category</a></li>
+					<li><a href="#service">Completed</a></li>
+					<li><a href="#pricing">How to</a></li>
 					<li><a href="#team">Team</a></li>
-					<li class="has-dropdown"><a href="#blog">Blog</a>
+					<!-- <li class="has-dropdown"><a href="#blog">Blog</a>
 						<ul class="dropdown">
 							<li><a href="blog-single.html">blog post</a></li>
 						</ul>
-					</li>
+					</li> -->
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="/login">Login</a></li>
+					<li><a href="/register">Register</a></li>
 				</ul>
 				<!-- /Main navigation -->
 
@@ -96,9 +99,8 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1 class="white-text">We Are Creative Agency</h1>
-							<p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere.
-							</p>
+							<h1 class="white-text">Helping to complete your tasks here</h1>
+							<p class="white-text">Providing trusted people who are going to help you do your tasks.</p>
 							<button class="white-btn">Get Started!</button>
 							<button class="main-btn">Learn more</button>
 						</div>
@@ -113,64 +115,6 @@
 	</header>
 	<!-- /Header -->
 
-	<!-- About -->
-	<div id="about" class="section md-padding">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Welcome to Website</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-cogs"></i>
-						<h3>Fully Customizible</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
-					</div>
-				</div>
-				<!-- /about -->
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-magic"></i>
-						<h3>Awesome Features</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
-					</div>
-				</div>
-				<!-- /about -->
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-mobile"></i>
-						<h3>Fully Responsive</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
-					</div>
-				</div>
-				<!-- /about -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /About -->
-
-
 	<!-- Portfolio -->
 	<div id="portfolio" class="section md-padding bg-grey">
 
@@ -182,7 +126,7 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Featured Works</h2>
+					<h2 class="title">Category</h2>
 				</div>
 				<!-- /Section header -->
 
@@ -192,7 +136,7 @@
 					<div class="overlay"></div>
 					<div class="work-content">
 						<span>Category</span>
-						<h3>Lorem ipsum dolor</h3>
+						<h3>Business & Admin</h3>
 						<div class="work-link">
 							<a href="#"><i class="fa fa-external-link"></i></a>
 							<a class="lightbox" href="./img/work1.jpg"><i class="fa fa-search"></i></a>
@@ -207,7 +151,7 @@
 					<div class="overlay"></div>
 					<div class="work-content">
 						<span>Category</span>
-						<h3>Lorem ipsum dolor</h3>
+						<h3>Cleaning</h3>
 						<div class="work-link">
 							<a href="#"><i class="fa fa-external-link"></i></a>
 							<a class="lightbox" href="./img/work2.jpg"><i class="fa fa-search"></i></a>
@@ -222,7 +166,7 @@
 					<div class="overlay"></div>
 					<div class="work-content">
 						<span>Category</span>
-						<h3>Lorem ipsum dolor</h3>
+						<h3>Delivery & removals</h3>
 						<div class="work-link">
 							<a href="#"><i class="fa fa-external-link"></i></a>
 							<a class="lightbox" href="./img/work3.jpg"><i class="fa fa-search"></i></a>
@@ -237,7 +181,7 @@
 					<div class="overlay"></div>
 					<div class="work-content">
 						<span>Category</span>
-						<h3>Lorem ipsum dolor</h3>
+						<h3>Furniture assembly</h3>
 						<div class="work-link">
 							<a href="#"><i class="fa fa-external-link"></i></a>
 							<a class="lightbox" href="./img/work4.jpg"><i class="fa fa-search"></i></a>
@@ -252,7 +196,7 @@
 					<div class="overlay"></div>
 					<div class="work-content">
 						<span>Category</span>
-						<h3>Lorem ipsum dolor</h3>
+						<h3>Handyman</h3>
 						<div class="work-link">
 							<a href="#"><i class="fa fa-external-link"></i></a>
 							<a class="lightbox" href="./img/work5.jpg"><i class="fa fa-search"></i></a>
@@ -267,7 +211,7 @@
 					<div class="overlay"></div>
 					<div class="work-content">
 						<span>Category</span>
-						<h3>Lorem ipsum dolor</h3>
+						<h3>Anything</h3>
 						<div class="work-link">
 							<a href="#"><i class="fa fa-external-link"></i></a>
 							<a class="lightbox" href="./img/work6.jpg"><i class="fa fa-search"></i></a>
@@ -286,7 +230,7 @@
 	<!-- /Portfolio -->
 
 	<!-- Service -->
-	<div id="service" class="section md-padding">
+	<div id="service" class="section md-padding ">
 
 		<!-- Container -->
 		<div class="container">
@@ -296,16 +240,24 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">What we offer</h2>
+					<h2 class="title">Some of our completed tasks</h2>	
 				</div>
 				<!-- /Section header -->
 
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-diamond"></i>
-						<h3>App Development</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+						<!-- <i class="fa fa-diamond"></i> -->
+						<div class="testimonial"><div class="testimonial-meta">
+						<img src="./img/perso1.jpg" alt="">
+						</div></div>
+						<h3>Cleaning</h3>
+						<p>Carpet steam cleaning before move in.</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
 					</div>
 				</div>
 				<!-- /service -->
@@ -313,9 +265,17 @@
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-rocket"></i>
-						<h3>Graphic Design</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+						<!-- <i class="fa fa-rocket"></i> -->
+						<div class="testimonial"><div class="testimonial-meta">
+						<img src="./img/perso2.jpg" alt="">
+						</div></div>
+						<h3>Moving</h3>
+						<p>Move queen size bed from neighbouring house.</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
 					</div>
 				</div>
 				<!-- /service -->
@@ -323,9 +283,17 @@
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-cogs"></i>
-						<h3>Creative Idea</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+						<!-- <i class="fa fa-cogs"></i> -->
+						<div class="testimonial"><div class="testimonial-meta">
+						<img src="./img/perso1.jpg" alt="">
+						</div></div>
+						<h3>Delivery</h3>
+						<p>Help on packing stuff in my house.</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
 					</div>
 				</div>
 				<!-- /service -->
@@ -333,9 +301,17 @@
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-diamond"></i>
-						<h3>Marketing</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+						<!-- <i class="fa fa-diamond"></i> -->
+						<div class="testimonial"><div class="testimonial-meta">
+						<img src="./img/perso2.jpg" alt="">
+						</div></div>
+						<h3>Assembling</h3>
+						<p>Help assemble new bought chair.</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
 					</div>
 				</div>
 				<!-- /service -->
@@ -343,9 +319,17 @@
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-pencil"></i>
-						<h3>Awesome Support</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+						<!-- <i class="fa fa-pencil"></i> -->
+						<div class="testimonial"><div class="testimonial-meta">
+						<img src="./img/perso1.jpg" alt="">
+						</div></div>
+						<h3>Removal</h3>
+						<p>Remove unused cardboard boxes in garage.</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
 					</div>
 				</div>
 				<!-- /service -->
@@ -353,10 +337,19 @@
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-flask"></i>
-						<h3>Brand Design</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+						<!-- <i class="fa fa-flask"></i> -->
+						<div class="testimonial"><div class="testimonial-meta">
+						<img src="./img/perso2.jpg" alt="">
+						</div></div>
+						<h3>Design</h3>
+						<p>Help design logo for italian restaurant.</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
+						<p class="material-icons" style="font-size:24px">star</p>
 					</div>
+					
 				</div>
 				<!-- /service -->
 
@@ -369,288 +362,195 @@
 	</div>
 	<!-- /Service -->
 
+<!-- Pricing -->
+<div id="pricing" class="section md-padding bg-grey">
 
-	<!-- Why Choose Us -->
-	<div id="features" class="section md-padding bg-grey">
+<!-- Container -->
+<div class="container">
 
-		<!-- Container -->
-		<div class="container">
+	<!-- Row -->
+	<div class="row">
 
-			<!-- Row -->
-			<div class="row">
-
-				<!-- why choose us content -->
-				<div class="col-md-6">
-					<div class="section-header">
-						<h2 class="title">Why Choose Us</h2>
-					</div>
-					<p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque purus.</p>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Quis varius quam quisque id diam vel quam elementum.</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Mauris augue neque gravida in fermentum.</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Orci phasellus egestas tellus rutrum.</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
-					</div>
-				</div>
-				<!-- /why choose us content -->
-
-				<!-- About slider -->
-				<div class="col-md-6">
-					<div id="about-slider" class="owl-carousel owl-theme">
-						<img class="img-responsive" src="./img/about1.jpg" alt="">
-						<img class="img-responsive" src="./img/about2.jpg" alt="">
-						<img class="img-responsive" src="./img/about1.jpg" alt="">
-						<img class="img-responsive" src="./img/about2.jpg" alt="">
-					</div>
-				</div>
-				<!-- /About slider -->
-
-			</div>
-			<!-- /Row -->
-
+		<!-- Section header -->
+		<div class="section-header text-center">
+			<h2 class="title">How to use Jobtasker?</h2>
 		</div>
-		<!-- /Container -->
+		<!-- /Section header -->
+
+		<!-- pricing -->
+		<div class="col-sm-4">
+			<div class="pricing">
+				<div class="price-head">
+					<span class="price-title">Post your task</span>
+					<i class="material-icons" style="font-size:72px">note_add</i>
+				</div>
+				<ul class="price-content">
+					<li>
+						<p>Tell us what you need done.</p>
+					</li>
+					<li>
+						<p>It's FREE to post.</p>
+					</li><br><br>
+				</ul>
+				
+			</div>
+		</div>
+		<!-- /pricing -->
+
+		<!-- pricing -->
+		<div class="col-sm-4">
+			<div class="pricing">
+				<div class="price-head">
+					<span class="price-title">Review tasks</span>
+					<i class="material-icons" style="font-size:66px">star</i>
+					<i class="material-icons" style="font-size:66px">star</i>
+					<i class="material-icons" style="font-size:66px">star_half</i>
+				</div>
+				<ul class="price-content">
+					<li>
+						<p>Get offers from trusted </p>
+					</li>
+					<li>
+						<p>Taskers and view profiles.</p>
+					</li><br><br>
+				</ul>
+			</div>
+		</div>
+		<!-- /pricing -->
+
+		<!-- pricing -->
+		<div class="col-sm-4">
+			<div class="pricing">
+				<div class="price-head">
+					<span class="price-title">Get it done</span>
+					<i class="material-icons" style="font-size:72px">check</i>
+				</div>
+				<ul class="price-content">
+					<li>
+						<p>Choose the right person for</p>
+					</li>
+					<li>
+						<p> your task and get it done.</p>
+					</li><br><br>
+				</ul>
+			</div>
+		</div>
+		<!-- /pricing -->
 
 	</div>
-	<!-- /Why Choose Us -->
+	<!-- Row -->
 
+</div>
+<!-- /Container -->
 
-	<!-- Numbers -->
-	<div id="numbers" class="section sm-padding">
+</div>
+<!-- /Pricing -->
 
-		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background2.jpg');">
-			<div class="overlay"></div>
+<!-- Team -->
+<div id="team" class="section md-padding">
+
+<!-- Container -->
+<div class="container">
+
+	<!-- Row -->
+	<div class="row">
+
+		<!-- Section header -->
+		<div class="section-header text-center">
+			<h2 class="title">Our Team</h2>
 		</div>
-		<!-- /Background Image -->
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-users"></i>
-						<h3 class="white-text"><span class="counter">451</span></h3>
-						<span class="white-text">Happy clients</span>
+		<!-- /Section header -->
+		<p>Here are some of our taskers, get to know about what and how they do things 
+		here at Jobtasker!</p>
+		<!-- team -->
+		<div class="col-sm-4">
+			<div class="team">
+				<div class="team-img">
+					<img class="img-responsive" src="./img/team1.jpg" alt="">
+					<div class="overlay">
+						<div class="team-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</div>
 					</div>
 				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-trophy"></i>
-						<h3 class="white-text"><span class="counter">12</span></h3>
-						<span class="white-text">Awards won</span>
-					</div>
+				<div class="team-content">
+					<h3>John Doe</h3>
+					<span>speciality: delivery, cleaning</span><br>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
 				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-coffee"></i>
-						<h3 class="white-text"><span class="counter">154</span>K</h3>
-						<span class="white-text">Cups of Coffee</span>
-					</div>
-				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-file"></i>
-						<h3 class="white-text"><span class="counter">45</span></h3>
-						<span class="white-text">Projects completed</span>
-					</div>
-				</div>
-				<!-- /number -->
-
 			</div>
-			<!-- /Row -->
-
 		</div>
-		<!-- /Container -->
+		<!-- /team -->
+
+		<!-- team -->
+		<div class="col-sm-4">
+			<div class="team">
+				<div class="team-img">
+					<img class="img-responsive" src="./img/team2.jpg" alt="">
+					<div class="overlay">
+						<div class="team-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="team-content">
+					<h3>James Roe</h3>
+					<span>speciality: assembly, handyman</span><br>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+				</div>
+			</div>
+		</div>
+		<!-- /team -->
+
+		<!-- team -->
+		<div class="col-sm-4">
+			<div class="team">
+				<div class="team-img">
+					<img class="img-responsive" src="./img/team3.jpg" alt="">
+					<div class="overlay">
+						<div class="team-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="team-content">
+					<h3>Joe Poe</h3>
+					<span>speciality: design, marketing</span><br>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+					<p class="material-icons" style="font-size:24px">star</p>
+				</div>
+			</div>
+		</div>
+		<!-- /team -->
 
 	</div>
-	<!-- /Numbers -->
+	<!-- /Row -->
 
-	<!-- Pricing -->
-	<div id="pricing" class="section md-padding">
+</div>
+<!-- /Container -->
 
-		<!-- Container -->
-		<div class="container">
+</div>
+<!-- /Team -->
 
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Pricing Table</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Basic plan</span>
-							<div class="price">
-								<h3>$9<span class="duration">/ month</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1GB Disk Space</p>
-							</li>
-							<li>
-								<p>100 Email Account</p>
-							</li>
-							<li>
-								<p>24/24 Support</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Silver plan</span>
-							<div class="price">
-								<h3>$19<span class="duration">/ month</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1GB Disk Space</p>
-							</li>
-							<li>
-								<p>100 Email Account</p>
-							</li>
-							<li>
-								<p>24/24 Support</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Gold plan</span>
-							<div class="price">
-								<h3>$39<span class="duration">/ month</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1GB Disk Space</p>
-							</li>
-							<li>
-								<p>100 Email Account</p>
-							</li>
-							<li>
-								<p>24/24 Support</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-			</div>
-			<!-- Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Pricing -->
-
-
-	<!-- Testimonial -->
-	<div id="testimonial" class="section md-padding">
-
-		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background3.jpg');">
-			<div class="overlay"></div>
-		</div>
-		<!-- /Background Image -->
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Testimonial slider -->
-				<div class="col-md-10 col-md-offset-1">
-					<div id="testimonial-slider" class="owl-carousel owl-theme">
-
-						<!-- testimonial -->
-						<div class="testimonial">
-							<div class="testimonial-meta">
-								<img src="./img/perso1.jpg" alt="">
-								<h3 class="white-text">John Doe</h3>
-								<span>Web Designer</span>
-							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
-						</div>
-						<!-- /testimonial -->
-
-						<!-- testimonial -->
-						<div class="testimonial">
-							<div class="testimonial-meta">
-								<img src="./img/perso2.jpg" alt="">
-								<h3 class="white-text">John Doe</h3>
-								<span>Web Designer</span>
-							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
-						</div>
-						<!-- /testimonial -->
-
-					</div>
-				</div>
-				<!-- /Testimonial slider -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Testimonial -->
-
-	<!-- Team -->
-	<div id="team" class="section md-padding">
+	<!-- About -->
+	<div id="about" class="section md-padding bg-grey">
 
 		<!-- Container -->
 		<div class="container">
@@ -660,72 +560,45 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Our Team</h2>
+					<h2 class="title">More about Jobtasker</h2>
 				</div>
 				<!-- /Section header -->
 
-				<!-- team -->
-				<div class="col-sm-4">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="./img/team1.jpg" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3>John Doe</h3>
-							<span>Web Designer</span>
-						</div>
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-credit-card"></i>
+						<h3>Secure Payments</h3>
+						<p>Using trusted banks on payments to help payment process secure and fast, 
+							so tasks can be executed when you're done with your payment.</p>
+						<a href="#">Read more</a>
 					</div>
 				</div>
-				<!-- /team -->
+				<!-- /about -->
 
-				<!-- team -->
-				<div class="col-sm-4">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="./img/team2.jpg" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3>John Doe</h3>
-							<span>Web Designer</span>
-						</div>
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-clock-o"></i>
+						<h3>Fast Process</h3>
+						<p>Making sure it's easy and fast on every process you've paid for, so rest 
+							assured and we will handle it for you.</p>
+						<a href="#">Read more</a>
 					</div>
 				</div>
-				<!-- /team -->
+				<!-- /about -->
 
-				<!-- team -->
-				<div class="col-sm-4">
-					<div class="team">
-						<div class="team-img">
-							<img class="img-responsive" src="./img/team3.jpg" alt="">
-							<div class="overlay">
-								<div class="team-social">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3>John Doe</h3>
-							<span>Web Designer</span>
-						</div>
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-balance-scale"></i>
+						<h3>Everything is insured</h3>
+						<p>We ensure that every task we help you do is already insured, you don't need to be 
+							scared of failures or any unappropriate actions our tasker takes.</p>
+						<a href="#">Read more</a>
 					</div>
 				</div>
-				<!-- /team -->
+				<!-- /about -->
 
 			</div>
 			<!-- /Row -->
@@ -734,91 +607,7 @@
 		<!-- /Container -->
 
 	</div>
-	<!-- /Team -->
-
-	<!-- Blog -->
-	<div id="blog" class="section md-padding bg-grey">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Recents news</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- blog -->
-				<div class="col-md-4">
-					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive" src="./img/blog1.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-user"></i>John doe</li>
-								<li><i class="fa fa-clock-o"></i>18 Oct</li>
-								<li><i class="fa fa-comments"></i>57</li>
-							</ul>
-							<h3>Molestie at elementum eu facilisis sed odio</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Read more</a>
-						</div>
-					</div>
-				</div>
-				<!-- /blog -->
-
-				<!-- blog -->
-				<div class="col-md-4">
-					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive" src="./img/blog2.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-user"></i>John doe</li>
-								<li><i class="fa fa-clock-o"></i>18 Oct</li>
-								<li><i class="fa fa-comments"></i>57</li>
-							</ul>
-							<h3>Molestie at elementum eu facilisis sed odio</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Read more</a>
-						</div>
-					</div>
-				</div>
-				<!-- /blog -->
-
-				<!-- blog -->
-				<div class="col-md-4">
-					<div class="blog">
-						<div class="blog-img">
-							<img class="img-responsive"  src="./img/blog3.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<ul class="blog-meta">
-								<li><i class="fa fa-user"></i>John doe</li>
-								<li><i class="fa fa-clock-o"></i>18 Oct</li>
-								<li><i class="fa fa-comments"></i>57</li>
-							</ul>
-							<h3>Molestie at elementum eu facilisis sed odio</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-							<a href="blog-single.html">Read more</a>
-						</div>
-					</div>
-				</div>
-				<!-- /blog -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Blog -->
+	<!-- /About -->
 
 	<!-- Contact -->
 	<div id="contact" class="section md-padding">
@@ -917,7 +706,7 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+						<p>Copyright © 2017. All Rights Reserved.
 					</div>
 					<!-- /footer copyright -->
 
