@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\TagCrudRequest as StoreRequest;
-use App\Http\Requests\TagCrudRequest as UpdateRequest;
+use App\Http\Requests\jobcategoryrequest as StoreRequest;
+use App\Http\Requests\jobcategoryrequest as UpdateRequest;
 
 class jobcategorycontroller extends CrudController
 {

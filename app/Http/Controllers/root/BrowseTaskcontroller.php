@@ -5,6 +5,7 @@ namespace App\Http\Controllers\root;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\JobPost;
+use App\jobcategory;
 class BrowseTaskcontroller extends Controller
 {
     /**
@@ -15,7 +16,8 @@ class BrowseTaskcontroller extends Controller
     public function index()
     {
         $jobs = JobPost::where('status','not assigned')->get();
-        return view('afterlogin.browsetask',compact('jobs'));
+        $categories = jobcategory::all();
+        return view('afterlogin.browsetask',compact('jobs','categories'));
     }
 
     /**
@@ -47,7 +49,12 @@ class BrowseTaskcontroller extends Controller
      */
     public function show($id)
     {
-        //
+        $jobs = JobPost::where('job_category',$id)->get();
+        $categories = jobcategory::all();
+        //return redirect()->back()->with('jobs',$jobs)->with('categories',$categories);
+        //return \Redirect::back()->with('viewtask',$page);
+        //return redirect('browsetask')->c('jobs',$jobs)->with('categories',$categories);
+        return view('afterlogin.browsetask',compact('jobs','categories'));
     }
 
     /**

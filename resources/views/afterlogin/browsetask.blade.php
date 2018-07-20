@@ -11,6 +11,9 @@ colorlib-active
 							<h2 class="colorlib-heading">Yum...more money</h2>
 						</div>
 				</div>
+				@foreach($categories as $category)
+					<a href="/browsetask/{{$category->category}}">{{$category->category}}</a>
+				@endforeach
 				<div class="row">
                 @foreach($jobs as $job)
 						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
