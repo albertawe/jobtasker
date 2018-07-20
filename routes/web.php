@@ -28,4 +28,5 @@ Route::get('viewtask/accept_offer/{offer_id}', "AcceptOfferController@Accept");
 Route::get('viewtask/createmessage/{id}',"root\messagecontroller@create");
 Route::get('/message',"root\messagecontroller@index");
 Route::get('/viewcons/{id}',"root\conversationcontroller@index");
+Route::post('/viewcons/send_message/{id}', "root\conversationcontroller@post_message");
 //Route::get('/home', 'HomeController@index');

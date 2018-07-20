@@ -34,4 +34,12 @@ class User extends Authenticatable
     public function user_profile(){
         return $this->hasOne("App\UserProfile");
     }
+
+    public function messages(){
+        return $this->hasMany('App\message');
+    }
+
+    public function conversations(){
+        return $this->hasMany('App\conversation', 'sender_id');
+    }
 }

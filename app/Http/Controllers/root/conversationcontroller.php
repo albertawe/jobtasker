@@ -6,12 +6,29 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\message;
 use App\conversation;
+use Auth;
 class conversationcontroller extends Controller
 {
     public function index($id){
-        $messages = message::where('id',$id)->with(['conversation']);
-        dd($messages);
+        $message = message::where('id',$id)->with('conversation.user.user_profile')->first();
+        $conversations = $message->conversation;
+//        dd($message);
+//        dd($conversations[0]->cons_id);
         // dd($messages->name1);
         // dd($messages->name2);
+        return view('testconversation', compact('conversations'), compact('message'));
+    }
+
+    public function post_message(Request $request, $id){
+        $user = Auth::user()->id;
+        $con_id = $id;
+        if (!empty($request->content)) {
+            $con = new conversation;
+            $con->cons_id = $con_id;
+            $con->content = $request->content;
+            $con->sender_id = $user;
+            $con->save();
+        }
+        return redirect()->back();
     }
 }
