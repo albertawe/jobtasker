@@ -54,6 +54,7 @@ class UserProfileController extends Controller
         $user_profile->email = $request->get('email');
         $user_profile->bank = $request->get('bank');
         $user_profile->no_rek = $request->get('no_rek');
+        $user_profile->phone = $request->get('phone');
         //$user_profile->birthdate = $request->get('birthdate');
         $user_profile->birthdate = $request->date;
         if($request->image != null){

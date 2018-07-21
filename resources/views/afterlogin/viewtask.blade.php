@@ -20,7 +20,7 @@
                                 <p>Due Date : {{$taskdetails->due_date}}</p>
                                 <p>Address : {{$taskdetails->address}}</p>
                                 <p>Job Description : {{$taskdetails->job_description}}</p>
-							@if($taskdetails->posted_by_id == $uid)
+							@if($taskdetails->posted_by_id == $uid && $taskdetails->status == 'not assigned')
 							@foreach($offers as $offer)
 							<p>{{$offer->description}}</p>
 							<p>{{$offer->nego}}</p>
@@ -28,6 +28,10 @@
 							<a href="viewprofile/{{$offer->user_offer_id}}"><p>See the tasker's profile</p></a>
                             <a href="accept_offer/{{$offer->id}}"><p>choose this offer</p></a>
 							@endforeach
+							@elseif($taskdetails->posted_by_id == $uid && $taskdetails->status == 'assigned')
+							<a href="finish_offer/{{$taskdetails->id}}"><p>The task is finished</p></a>
+							@elseif($taskdetails->status == 'finished')
+							<p>this task is finished</p>
 							@elseif($taskdetails->status == 'not assigned')
 							<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
 									<form method="post" action="{{url('postoffer')}}" enctype="multipart/form-data">

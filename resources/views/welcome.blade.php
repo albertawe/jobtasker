@@ -101,8 +101,8 @@
 						<div class="home-content">
 							<h1 class="white-text">Helping to complete your tasks here</h1>
 							<p class="white-text">Providing trusted people who are going to help you do your tasks.</p>
-							<button class="white-btn">Get Started!</button>
-							<button class="main-btn">Learn more</button>
+							<button class="white-btn"><a href="/register">Get Started!</a></button>
+							<!-- <button class="main-btn"><a href="/login">Login</a></button> -->
 						</div>
 					</div>
 					<!-- /home content -->

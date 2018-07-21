@@ -37,6 +37,10 @@ colorlib-active
 											<input type="text" value="{{$user->user_profile->last_name}}" class="form-control" placeholder="LastName" name="lastname">
 										</div>
 										<div class="form-group">
+										<span class="heading-meta">Phone Number</span>
+											<input type="text" value="{{$user->user_profile->phone}}" class="form-control" placeholder="phone number" name="phone">
+										</div>
+										<div class="form-group">
 										<span class="heading-meta">Email</span>
 											<input type="text" value="{{$user->user_profile->email}}" class="form-control" placeholder="Email" name="email">
 										</div>

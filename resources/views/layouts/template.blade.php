@@ -62,7 +62,7 @@
 					<li class="@yield('colorlib_mytask')"><a href="/mytask">My Task</a></li>
 					<li class="@yield('colorlib_offertask')"><a href="/postoffer">offer</a></li>
 					<li class="@yield('colorlib_message')"><a href="/message">message</a></li>
-					<li class="@yield('colorlib_helptask')"><a href="/help">help</a></li>
+					<li class="@yield('colorlib_helptask')"><a href="/email">help</a></li>
 					<li ><a href="/logout">logout</a></li>
 				</ul>
 			</nav>

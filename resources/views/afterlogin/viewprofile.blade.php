@@ -21,6 +21,10 @@
 							<span class="heading-meta">Last Name</span>
 							<h2 class="colorlib-heading">{{$user->user_profile->last_name}}</h2>
 						</div>
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Phone Number</span>
+							<h2 class="colorlib-heading">{{$user->user_profile->phone}}</h2>
+						</div>
                         <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">Email</span>
 							<h2 class="colorlib-heading">{{$user->user_profile->email}}</h2>
