@@ -9,6 +9,7 @@ use Auth;
 use App\UserProfile;
 use App\UserSkill;
 use Carbon\Carbon;
+use App\blog;
 class UserProfileController extends Controller
 {
     /**
@@ -22,10 +23,10 @@ class UserProfileController extends Controller
 //        $user_profile = UserProfile::find($id);
 //        $user_skill = UserSkill::find($id);
         $user = User::where('id', $id)->with(['user_skill', 'user_profile'])->first();
-
+        $blogs = blog::all();
         Carbon::parse($user->user_profile->birthdate)->format('y/m/d');
         //dd($user_profile);
-        return view('afterlogin.home',compact('user'));
+        return view('afterlogin.home',compact('user','blogs'));
         //return $user_profile;
     }
 

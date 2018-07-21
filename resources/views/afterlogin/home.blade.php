@@ -11,6 +11,13 @@ colorlib-active
 							<h2 class="colorlib-heading">Announcement</h2>
 						</div>
 				</div>
+				@foreach($blogs as $blog)
+				<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">{{$blog->berita}}</h2>
+						</div>
+				</div>
+				@endforeach
 				<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<h2 class="colorlib-heading">Your Profile</h2>
