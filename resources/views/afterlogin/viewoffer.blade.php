@@ -1,4 +1,7 @@
 @extends('layouts/template')
+@section('colorlib_offertask')
+colorlib-active
+@endsection
 @section('content')
 		<div class="colorlib-contact">
 			<div class="colorlib-narrow-content">
