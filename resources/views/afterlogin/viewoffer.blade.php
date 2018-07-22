@@ -8,6 +8,7 @@ colorlib-active
 				<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">List of offer that you submit</span>
+							<h2 class="colorlib-heading">Your offers</h2>
 						</div>
 				</div>
 				<div class="row">
@@ -17,10 +18,8 @@ colorlib-active
 								<!-- <a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a> -->
 								<div class="desc">
 								<h3><a href="viewtask/{{$offer->job_id}}">{{$offer->job_title}}</a></h3>
-									<span> Price :
-									<small>{{$offer->nego}}</small>
-									</span>
-									<p>{{$offer->description}}</p>
+									<span>Negotiation Price: <small>{{$offer->nego}}</small></br>
+									Description: <small>{{$offer->description}}</small></span></br>
 								</div>
                         </div>
 				</div>

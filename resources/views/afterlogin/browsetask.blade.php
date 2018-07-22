@@ -8,11 +8,11 @@ colorlib-active
 				<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">Browse available task</span>
-							<h2 class="colorlib-heading">Yum...more money</h2>
+							<h2 class="colorlib-heading">Tasks for you to work on</h2>
 						</div>
 				</div>
 				@foreach($categories as $category)
-					<a href="/browsetask/{{$category->category}}">{{$category->category}}</a>
+					<!-- <a href="/browsetask/{{$category->category}}">{{$category->category}}</a> -->
 				@endforeach
 				<div class="row">
                 @foreach($jobs as $job)
@@ -21,9 +21,12 @@ colorlib-active
 								<!-- <a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a> -->
 								<div class="desc">
 								<h3><a href="viewtask/{{$job->id}}">{{$job->title}}</a></h3>
-									<span>Due Date : <small>{{$job->due_date}}</small> | Category :
-									<small>{{$job->job_category}}</small> | Type : <small>{{$job->job_type}}</small></span>
-									<p>{{$job->job_description}}</p>
+									<!-- <ul> -->
+									<span>Due Date: <small>{{$job->due_date}}</small></br>
+									Category: <small>{{$job->job_category}}</small></br>
+									Type: <small>{{$job->job_type}}</small></br>
+									Description: <small>{{$job->job_description}}</small></span>
+									<!-- </ul> -->
 								</div>
                         </div>
 				</div>

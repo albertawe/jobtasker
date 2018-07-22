@@ -1,22 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-
-    </style>
-</head>
-<body>
-    <div id="chatList">
+@extends('layouts/template')
+@section('colorlib_message')
+    colorlib-active
+@endsection
+@section('content')
+    <div class="colorlib-contact">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+            <div id="chatList">
         @foreach($conversations as $conversation)
             <p>{{$conversation->user->user_profile->first_name}} {{$conversation->user->user_profile->last_name}} : {{$conversation->content}}</p>
         @endforeach
     </div>
     <div id="form">
         <form action="send_message/{{$message->id}}" method="post">
-            <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
-            <input type="text" name="content"><br>
-            <input type="submit" value="Submit">
+            <input type="hidden" name="_token" class="btn btn-info" id="csrf-token" value="{{ Session::token() }}" /><br>
+            <input type="text" name="content"><br><br>
+            <input type="submit" value="Send" class="btn-primary btn">
+            <br><u><a href="/message">🡐 Back</a></u>
         </form>
     </div>
-</body>
+            </div>
+        </div>
+    </div>
+@endsection
 </html>
