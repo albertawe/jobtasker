@@ -12,7 +12,7 @@ colorlib-active
 						</div>
 				</div>
 				@foreach($categories as $category)
-					<!-- <a href="/browsetask/{{$category->category}}">{{$category->category}}</a> -->
+					<a href="/browsetask/{{$category->category}}">{{$category->category}}</a>
 				@endforeach
 				<div class="row">
                 @foreach($jobs as $job)
