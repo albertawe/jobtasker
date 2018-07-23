@@ -48,12 +48,12 @@ colorlib-active
 							<div class="blog-entry">
 								<!-- <a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a> -->
 								<div class="desc">
-								<h3><a href="viewtask/{{$job->id}}">{{$job->title}}</a></h3>
+								<h3><a href="viewtask/{{$jobb->id}}">{{$jobb->title}}</a></h3>
 									<!-- <ul> -->
-									<span>Due Date: <small>{{$job->due_date}}</small></br>
-									Category: <small>{{$job->job_category}}</small></br>
-									Type: <small>{{$job->job_type}}</small></br>
-									Description: <small>{{$job->job_description}}</small></span>
+									<span>Due Date: <small>{{$jobb->due_date}}</small></br>
+									Category: <small>{{$jobb->job_category}}</small></br>
+									Type: <small>{{$jobb->job_type}}</small></br>
+									Description: <small>{{$jobb->job_description}}</small></span>
 									<!-- </ul> -->
 								</div>
                         </div>

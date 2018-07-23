@@ -30,7 +30,7 @@
 							<p>Nego Price: {{$offer->nego}}</p></br>
 							</span>
 							<input type="button" onclick="location.href='createmessage/{{$offer->user_offer_id}}';" class="btn btn-info col-md-10" value="send this tasker a message">
-							<input type="button" onclick="location.href=viewprofile/{{$offer->user_offer_id}}';" class="btn btn-info col-md-10" value="see this tasker's profile">
+							<input type="button" onclick="location.href='viewprofile/{{$offer->user_offer_id}}';" class="btn btn-info col-md-10" value="see this tasker's profile">
 							<input type="button" onclick="location.href='accept_offer/{{$offer->id}}';" class="btn btn-info col-md-10" value="choose this offer">
 							@endforeach
 							@elseif($taskdetails->posted_by_id == $uid && $taskdetails->status == 'assigned')
