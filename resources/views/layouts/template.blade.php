@@ -53,7 +53,9 @@
 	<div id="colorlib-page">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<h1 id="colorlib-logo"><a href="index.html">JobTasker</a></h1>
+		<div class="footer-logo">
+			<a href="/home"><img src="img/logo-w.png" alt="logo"></a>
+		</div>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>				
 					<li class="@yield('colorlib_home')"><a href="/dashboard">Home</a></li>

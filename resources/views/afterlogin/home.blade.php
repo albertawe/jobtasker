@@ -37,23 +37,23 @@ colorlib-active
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">First Name</span>
-											<input type="text" value="{{$user->user_profile->first_name}}" class="form-control" placeholder="FirstName" name="firstname">
+											<input type="text" value="{{$user->user_profile->first_name}}" class="form-control" placeholder="" name="firstname">
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Last Name</span>
-											<input type="text" value="{{$user->user_profile->last_name}}" class="form-control" placeholder="LastName" name="lastname">
+											<input type="text" value="{{$user->user_profile->last_name}}" class="form-control" placeholder="" name="lastname">
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Phone Number</span>
-											<input type="text" value="{{$user->user_profile->phone}}" class="form-control" placeholder="phone number" name="phone">
+											<input type="text" value="{{$user->user_profile->phone}}" class="form-control" placeholder="" name="phone">
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Email</span>
-											<input type="text" value="{{$user->user_profile->email}}" class="form-control" placeholder="Email" name="email">
+											<input type="text" value="{{$user->user_profile->email}}" class="form-control" placeholder="" name="email">
 										</div>
 										<div class="form-group">
-										<span class="heading-meta">Location where you live</span>
-											<input type="text" value="{{$user->user_profile->location}}" class="form-control" placeholder="location ex.Medan, Sumatera Utara" name="location">
+										<span class="heading-meta">Address</span>
+											<input type="text" value="{{$user->user_profile->location}}" class="form-control" placeholder="" name="location">
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Your Birthdate</span>
@@ -67,11 +67,11 @@ colorlib-active
 										<h2 class="colorlib-heading">Payment Method</h2>
 										<div class="form-group">
 										<span class="heading-meta">Bank</span>
-											<input type="text" value="{{$user->user_profile->bank}}" class="form-control" placeholder="Mandiri,Bca,.." name="bank">
+											<input type="text" value="{{$user->user_profile->bank}}" class="form-control" placeholder="Mandiri, BCA, or others" name="bank">
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">No Rekening</span>
-											<input type="text" value="{{$user->user_profile->no_rek}}" class="form-control" placeholder="No rekening anda" name="no_rek">
+											<input type="text" value="{{$user->user_profile->no_rek}}" class="form-control" placeholder="" name="no_rek">
 										</div>
 										<div class="form-group">
 											<input type="submit" class="btn btn-primary btn-send-message" value="Update Profile">
@@ -84,7 +84,7 @@ colorlib-active
 					</div>
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<h2 class="colorlib-heading">Your Skill</h2>
+							<h2 class="colorlib-heading">Skills</h2>
 					</div>
 					<div class="col-md-7 col-md-push-1">
 						<div class="colorlib-narrow-content">
@@ -99,20 +99,20 @@ colorlib-active
 											<input type="file" value="" class="form-control" placeholder="Upload your Cv" name="cv">
 										</div>
 										<div class="form-group">
-										<span class="heading-meta">Your Transportation</span>
-											<input type="text" value="{{$user->user_skill->transportation}}" class="form-control" placeholder="how you go around" name="transportation">
+										<span class="heading-meta">Transportation</span>
+											<input type="text" value="{{$user->user_skill->transportation}}" class="form-control" placeholder="" name="transportation">
 										</div>
 										<div class="form-group">
-										<span class="heading-meta">Language</span>
-											<input type="text" value="{{$user->user_skill->language}}" class="form-control" placeholder="list the language you comfortable with" name="language">
+										<span class="heading-meta">Languages</span>
+											<input type="text" value="{{$user->user_skill->language}}" class="form-control" placeholder="" name="language">
 										</div>
 										<div class="form-group">
-										<span class="heading-meta">qualification</span>
-											<input type="text" value="{{$user->user_skill->qualification}}" class="form-control" placeholder="any qualification you have" name="qualification">
+										<span class="heading-meta">qualifications</span>
+											<input type="text" value="{{$user->user_skill->qualification}}" class="form-control" placeholder="" name="qualification">
 										</div>
 										<div class="form-group">
-										<span class="heading-meta">work experience</span>
-											<input type="text" value="{{$user->user_skill->workexperience}}" class="form-control" placeholder="mention your working experience" name="workexperience">
+										<span class="heading-meta">work experiences</span>
+											<input type="text" value="{{$user->user_skill->workexperience}}" class="form-control" placeholder="" name="workexperience">
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">more about what you capable of</span>

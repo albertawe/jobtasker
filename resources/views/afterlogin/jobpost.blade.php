@@ -20,7 +20,7 @@ colorlib-active
 									@csrf
 										<div class="form-group">
 										<span class="heading-meta">what type of tasker do you want?</span>
-											<select name="category" >
+											<select name="category" class="form-control">
 											@foreach($categories as $category)
 											<option value="{{$category->category}}">{{$category->category}}</option>  
 											@endforeach
@@ -28,22 +28,22 @@ colorlib-active
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Can it be done remotely?</span>
-										<select name="type">
+										<select name="type" class="form-control">
 											<option value="remote">remote</option>
 											<option value="directly">directly</option>    
 										</select>
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Title of your task</span>
-											<input type="text" value="" class="form-control" placeholder="Bantuin pasang perabut meja IKEA saya" name="title">
+											<input type="text" value="" class="form-control" placeholder="" name="title">
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Input the address your task will be held</span>
-											<input type="text" value="" class="form-control" placeholder="task address detail" name="address">
+											<input type="text" value="" class="form-control" placeholder="" name="address">
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Add your price (Idr)<br>(of course the more you add the happier the tasker)</span>
-											<input type="number" value="" class="form-control" placeholder="offer your price" name="price">
+											<input type="number" value="" class="form-control" placeholder="" name="price">
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Tell us the duedate of your task</span>
@@ -51,7 +51,7 @@ colorlib-active
 										</div>
 										<div class="form-group">
 										<span class="heading-meta">Describe your task</span>
-											<textarea name="jobdescription" value="" id="jobdescription" cols="30" rows="7" class="form-control" placeholder="describe your task specificly" name="jobdescription"></textarea>
+											<textarea name="jobdescription" value="" id="jobdescription" cols="30" rows="7" class="form-control" placeholder="" name="jobdescription"></textarea>
 										</div>
 										<div class="form-group">
 											<input type="submit" class="btn btn-primary btn-send-message" value="post your task">

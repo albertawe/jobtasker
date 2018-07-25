@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="container offset-md-1"><h2 style="margin-top:10px;">RESET PASSWORD</h2></div>
+                <div class="container offset-md-1"><h2 style="margin-top:20px;">RESET PASSWORD</h2></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -34,10 +34,15 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-10 offset-md-1">
+                            <div class="col-md-0 offset-md-1">
+                                <input type="button" onclick="location.href='/login'" class="btn btn-link" value="← Back">
+                            </div>
+                        <div class="">
+                            <div class="col-md-12 offset-md-10">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Send Password Reset Link') }}
                                 </button>
+                                </div>
                             </div>
                         </div>
                     </form>

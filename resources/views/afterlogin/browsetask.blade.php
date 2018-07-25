@@ -11,8 +11,11 @@ colorlib-active
 							<h2 class="colorlib-heading">Tasks for you to work on</h2>
 						</div>
 				</div>
+				<span class="animate-box">Filter:</span>
+				</br>
 				@foreach($categories as $category)
-					<a href="/browsetask/{{$category->category}}">{{$category->category}}</a>
+					<a href="/browsetask/{{$category->category}}" class="btn btn-info animate-box"
+					style="margin-bottom: 50px;">{{$category->category}}</a>
 				@endforeach
 				<div class="row">
                 @foreach($jobs as $job)

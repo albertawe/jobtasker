@@ -1,11 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="footer-logo">
+	<a href="/home"><img src="img/logo-w.png" alt="logo"></a>
+</div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="container offset-md-1"><h2 style="margin-top:10px;">LOGIN</h2></div>
+                <div class="container offset-md-1"><h2 style="margin-top:20px;">LOGIN</h2></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">

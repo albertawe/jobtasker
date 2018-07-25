@@ -56,7 +56,7 @@
 					<div class="navbar-brand">
 						<a href="index.html">
 							<img class="logo" src="img/logo.png" alt="logo">
-							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
+							<img class="logo-alt" src="img/logo-w.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -629,7 +629,7 @@
 					<div class="contact">
 						<i class="fa fa-phone"></i>
 						<h3>Phone</h3>
-						<p>512-421-3940</p>
+						<p>0822-7622-5560</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -639,7 +639,7 @@
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
 						<h3>Email</h3>
-						<p>email@support.com</p>
+						<p>jobtasker@gmail.com</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -649,7 +649,7 @@
 					<div class="contact">
 						<i class="fa fa-map-marker"></i>
 						<h3>Address</h3>
-						<p>1739 Bubby Drive</p>
+						<p>Jl. Sei Kera No. 5</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -689,7 +689,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.html"><img src="img/logo-alt.png" alt="logo"></a>
+						<a href="index.html"><img src="img/logo-w.png" alt="logo"></a>
 					</div>
 					<!-- /footer logo -->
 
